@@ -5,8 +5,6 @@ public abstract class Växter implements växtInterface{
     protected Mat mat;
     protected double matMängd;
 
-    public Växter() {
-    }
     public Växter(double längd, String namn) {
         this.längd = längd;
         this.namn = namn;
@@ -21,7 +19,6 @@ public abstract class Växter implements växtInterface{
     @Override
     public void beräknaMat(){
     }
-
     public String skrivUtMat() {
         return "\n" + namn + "\n\nBehöver " + matMängd + " liter\nav " + mat;
     }

@@ -6,10 +6,6 @@ import java.util.ArrayList;
 
 public class Huvudprogram {
     ArrayList<Växter> växter = new ArrayList<>();
-    String input;
-
-
-
     public Huvudprogram() {
 
     växterSkapas();
@@ -31,17 +27,12 @@ public class Huvudprogram {
             input = input.replaceAll("\\s", "");
             switch (input.toUpperCase()) {
                 case "IGGE":
-                    for (Växter växt : växter) {
-                        if (input.equalsIgnoreCase(växt.toString())) {
-                            växt.beräknaMat();
-                            JOptionPane.showMessageDialog(null, växt.skrivUtMat());
-                        }
-                    }
-                    repeat = false;
-                    break;
                 case "LAURA":
-                    System.out.println("Laura");
+                case "PUTTE":
+                case "MEATLOAF":
+                    hämtaPlanta(input);
                     break;
+
                 default:
                     JOptionPane.showMessageDialog(null, "Felaktiv inmatning, försök igen!");
 
@@ -49,12 +40,14 @@ public class Huvudprogram {
             }
         } while(repeat);
     }
-    private void getPlant(){
+    private String hämtaPlanta(String input){
         for (Växter växt : växter) {
-            if (input.equals(växt.getNamn())) {
-                växt.skrivUtMat();
+            if (input.equalsIgnoreCase(växt.toString())) {
+                växt.beräknaMat();
+                JOptionPane.showMessageDialog(null, växt.skrivUtMat());
             }
         }
+        return null;
     }
 
 
