@@ -1,3 +1,5 @@
+package växter;
+
 public enum Mat {
     KRANVATTEN (0.5, 0.0),
     PROTEINDRYCK (0.1, 0.2),
