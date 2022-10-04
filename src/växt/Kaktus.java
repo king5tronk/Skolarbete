@@ -1,7 +1,7 @@
-package växter;
+package växt;
 
-public class Kaktusar extends Växter{
-    public Kaktusar(double längd, String namn) {
+public class Kaktus extends Växt {
+    public Kaktus(double längd, String namn) {
         super(längd, namn);
         mat = Mat.MINERALVATTEN;
     }

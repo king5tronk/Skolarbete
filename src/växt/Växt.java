@@ -1,5 +1,5 @@
-package växter;
-public abstract class Växter implements växtInterface{    //Här har jag gjort en class "Växter" som sedan alla andra
+package växt;
+public abstract class Växt implements växtInterface{    //Här har jag gjort en class "Växter" som sedan alla andra
                                                         // växter ärver samt implementerar interface.
                                                         // Även gjort variablerna till private och gjort
                                                         // getters till dom.
@@ -8,7 +8,7 @@ public abstract class Växter implements växtInterface{    //Här har jag gjort
     protected Mat mat;
     protected double matMängd;
 
-    public Växter(double längd, String namn) {
+    public Växt(double längd, String namn) {
         this.längd = längd;
         this.namn = namn;
     }

@@ -1,7 +1,7 @@
-package växter;
+package växt;
 
-public class Palmer extends Växter{
-    public Palmer(double längd, String namn) {
+public class Palm extends Växt {
+    public Palm(double längd, String namn) {
         super(längd, namn);
         mat = Mat.KRANVATTEN;
     }

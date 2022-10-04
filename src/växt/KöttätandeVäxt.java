@@ -1,7 +1,7 @@
-package växter;
+package växt;
 
-public class KöttätandeVäxter extends Växter{
-    public KöttätandeVäxter(double längd, String namn) {
+public class KöttätandeVäxt extends Växt {
+    public KöttätandeVäxt(double längd, String namn) {
         super(längd, namn);
         mat = Mat.PROTEINDRYCK;
     }

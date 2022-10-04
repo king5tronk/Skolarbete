@@ -1,4 +1,4 @@
-package växter;
+package växt;
 
 public enum Mat {                        //En special klass med en grupp av variablar som är "final"
                                         // med värden som aldrig ändras.
