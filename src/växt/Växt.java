@@ -1,7 +1,7 @@
 package växt;
 public abstract class Växt implements växtInterface{    //Här har jag gjort en class "Växter" som sedan alla andra
                                                         // växter ärver samt implementerar interface.
-                                                        // Även gjort variablerna till private och gjort
+                                                        // Även gjort variablerna till private (inkapsling) och gjort
                                                         // getters till dom.
     private double längd;
     private String namn;
@@ -20,7 +20,7 @@ public abstract class Växt implements växtInterface{    //Här har jag gjort e
         return längd;
     }
     @Override
-    public void beräknaMat(){
+    public void beräknaMat(){     //polymorifism, alla som extends "Växt" använder ärvda metoder och använder dom på olika sätt.
     }
     public String skrivUtMat() {
         return "\n" + namn + "\n\nBehöver " + matMängd + " liter\nav " + mat;

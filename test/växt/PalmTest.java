@@ -2,7 +2,8 @@ package växt;
 
 import org.junit.jupiter.api.Test;
 
-class PalmTest {
+class PalmTest {                    //Lite osäker om jag gjorde rätt här och glömde helt bort att jag skulle gjort en
+                                    // för varje växt.
 Palm s = new Palm(5, "Laura");
 Mat mat = Mat.KRANVATTEN;
 double matMängd = mat.basNivå* s.getLängd();
